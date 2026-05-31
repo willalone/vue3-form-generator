@@ -83,16 +83,6 @@ src/composables/useFormValidation.ts
 src/App.vue           — демо
 ```
 
-## Для автоматической проверки
-
-**Файлы `.vue` не пустые.** Raw-URL (`raw.githubusercontent.com`) обрезает HTML-теги SFC — бот видит «пустоту», CI и `npm test` проходят.
-
-| Что проверить | Ссылка |
-|---------------|--------|
-| Логика формы | [useFormGenerator.ts](https://github.com/willalone/vue3-form-generator/blob/main/src/components/FormGenerator/useFormGenerator.ts) |
-| UI компонент | [FormGenerator.vue](https://github.com/willalone/vue3-form-generator/blob/main/src/components/FormGenerator/FormGenerator.vue) (вкладка **Code**, не Raw) |
-| CI | [GitHub Actions](https://github.com/willalone/vue3-form-generator/actions) |
-
 ## Демо
 
 ![Form Generator — демо](./docs/demo.png)
