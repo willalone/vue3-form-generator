@@ -1,5 +1,9 @@
 # vue3-form-generator
 
+![Vue 3](https://img.shields.io/badge/Vue-3.5-42b883)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)
+![Tests](https://img.shields.io/badge/tests-45%20passed-brightgreen)
+
 Vue 3 · TypeScript · Vitest
 
 Компонент `FormGenerator` — динамическая форма по JSON-схеме с `v-model` и валидацией.
@@ -88,3 +92,7 @@ src/App.vue           — демо
 | Логика формы | [useFormGenerator.ts](https://github.com/willalone/vue3-form-generator/blob/main/src/components/FormGenerator/useFormGenerator.ts) |
 | UI компонент | [FormGenerator.vue](https://github.com/willalone/vue3-form-generator/blob/main/src/components/FormGenerator/FormGenerator.vue) (вкладка **Code**, не Raw) |
 | CI | [GitHub Actions](https://github.com/willalone/vue3-form-generator/actions) |
+
+## Демо
+
+![Form Generator — демо](./docs/demo.png)
