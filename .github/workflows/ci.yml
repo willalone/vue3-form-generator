@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+      - name: Verify key source files exist
+        run: |
+          test -s src/components/FormGenerator/FormGenerator.vue
+          test -s src/components/FormGenerator/FormField.vue
+          test -s src/components/FormGenerator/useFormGenerator.ts
+          test -s src/App.vue
+          wc -l src/components/FormGenerator/*.vue src/components/FormGenerator/*.ts src/App.vue
